@@ -1,0 +1,20 @@
+[project]
+name = "peft-lora-memory-and-quality"
+version = "0.1.0"
+description = "LoRA/QLoRA rank sweep with the memory math verified against measured VRAM, and an honest answer to when full fine-tuning wins."
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
