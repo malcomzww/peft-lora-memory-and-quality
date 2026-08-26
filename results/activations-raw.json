@@ -1,0 +1,73 @@
+{
+  "model": "llama-8b",
+  "card_gib": 80.0,
+  "by_sequence": [
+    {
+      "sequence": 512,
+      "activations_gib": 1.640625,
+      "attention_share": 0.009523809523809525,
+      "lora_total_gib": 16.6611328125,
+      "activation_share": 0.09847019518199403,
+      "saving_ratio": 5.484789871637067
+    },
+    {
+      "sequence": 2048,
+      "activations_gib": 6.75,
+      "attention_share": 0.037037037037037035,
+      "lora_total_gib": 21.7705078125,
+      "activation_share": 0.31005248284214776,
+      "saving_ratio": 4.432243305073341
+    },
+    {
+      "sequence": 8192,
+      "activations_gib": 30.0,
+      "attention_share": 0.13333333333333333,
+      "lora_total_gib": 45.0205078125,
+      "activation_share": 0.6663629856185332,
+      "saving_ratio": 2.6597253855664738
+    },
+    {
+      "sequence": 32768,
+      "activations_gib": 168.0,
+      "attention_share": 0.38095238095238093,
+      "lora_total_gib": 183.0205078125,
+      "activation_share": 0.9179299194826399,
+      "saving_ratio": 1.4082694370187767
+    },
+    {
+      "sequence": 131072,
+      "activations_gib": 1440.0,
+      "attention_share": 0.7111111111111111,
+      "lora_total_gib": 1455.0205078125,
+      "activation_share": 0.9896767724359555,
+      "saving_ratio": 1.051354382488971
+    }
+  ],
+  "crossover_sequence": {
+    "smol-135m": 1024,
+    "qwen-0.5b": 2048,
+    "llama-1b": 4096,
+    "llama-8b": 8192
+  },
+  "crossover_checkpointed": 65536,
+  "attention_dominance": 53248,
+  "capacity": {
+    "full": {
+      "plain": 0,
+      "checkpointed": 0
+    },
+    "lora": {
+      "plain": 8192,
+      "checkpointed": 131072
+    },
+    "qlora": {
+      "plain": 16384,
+      "checkpointed": 131072
+    }
+  },
+  "checkpointing_retained": {
+    "2048": 0.10416666666666667,
+    "8192": 0.09375,
+    "32768": 0.06696428571428571
+  }
+}
